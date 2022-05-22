@@ -6,7 +6,17 @@ import { loadFonts } from "./plugins/webfontloader";
 import VueScrollTo from "vue-scrollto";
 //import VueParticles from "vue-particles";
 
+//Font awesome関連
+import { library } from "@fortawesome/fontawesome-svg-core";
+//ここで使いたいアイコンをインポート
+import { faPen, faBirthdayCake, faSchool, faMailBulk, faCoffee, faUser } from "@fortawesome/free-solid-svg-icons";
+//Vue3で使用するためにインストール
+//npm install --save @fortawesome/vue-fontawesome@prerelease
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+
 loadFonts();
+
+library.add(faPen, faBirthdayCake, faSchool, faMailBulk, faCoffee, faUser);
 
 createApp(App)
   .use(router)
@@ -16,6 +26,7 @@ createApp(App)
     easing: "ease",
     offset: -120,
   })
+  .component("font-awesome-icon", FontAwesomeIcon)
   .mount("#app");
 
 //const app = createApp(App);

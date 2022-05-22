@@ -6,18 +6,18 @@
         <v-col align="center">
           <v-card max-width="700" class="about_detail">
             <v-card-text>
-              <h2>NAME</h2>
+              <h2><font-awesome-icon icon="user" /> NAME</h2>
               <br />{{ aboutMe.name }} <br /><br />
-              <h2>BIRTH DAY</h2>
+              <h2><font-awesome-icon icon="birthday-cake" /> BIRTH DAY</h2>
               <br />{{ aboutMe.birth }} <br /><br />
-              <h2>EMAIL</h2>
+              <h2><font-awesome-icon icon="mail-bulk" /> EMAIL</h2>
               <!-- <br /><a href="mailto:aboutMe.email">{{ aboutMe.email }}</a><br /><br /> -->
               <br />{{ aboutMe.email }}<br /><br />
-              <h2>UNIVERSITY</h2>
+              <h2><font-awesome-icon icon="school" class="icon" /> UNIVERSITY</h2>
               <br />{{ aboutMe.univ }} <br /><br />
-              <h2>CERTIFICATION</h2>
+              <h2><font-awesome-icon icon="pen" /> CERTIFICATION</h2>
               <br />{{ aboutMe.certification }} <br /><br />
-              <h2>SELF-INTRODUCTION</h2>
+              <h2><font-awesome-icon icon="coffee" /> SELF-INTRODUCTION</h2>
               <br />
               <div style="text-align: left">{{ aboutMe.self_introduction }}</div>
               <br /><br />
